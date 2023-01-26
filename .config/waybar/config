@@ -9,8 +9,8 @@
 		"clock"
 	],
 	"modules-right": [
-		"pulseaudio",
 		"network",
+		"pulseaudio",
 		"battery"
 	],
 	"wlr/workspaces": {
@@ -21,6 +21,22 @@
 	"clock": {
 		"format": "{:%I:%M %p %A, %B %d, %Y}",
 		"tooltip-format": "{:%B %Y}\n<tt>{calendar}</tt>"
+	},
+	"network": {
+		"format-disconnected": "{gwaddr} ",
+		"format-ethernet": "{gwaddr} ",
+		"format-linked": "{gwaddr} ",
+		"format-wifi": "{gwaddr} ",
+		"tooltip-format-disconnected": "Disconnected",
+		"tooltip-format-ethernet": "Connected",
+		"tooltip-format-linked": "Connected",
+		"tooltip-format-wifi": "Connected"
+	},
+	"pulseaudio": {
+		"format": "{volume}% 墳  {format_source}",
+		"format-muted": "{volume}% 婢  {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "{volume}% "
 	},
 	"battery": {
 		"states": {
@@ -42,21 +58,5 @@
 			"",
 			""
 		]
-	},
-	"network": {
-		"format-disconnected": "{gwaddr} ",
-		"format-ethernet": "{gwaddr} ",
-		"format-linked": "{gwaddr} ",
-		"format-wifi": "{gwaddr} ",
-		"tooltip-format-disconnected": "Disconnected",
-		"tooltip-format-ethernet": "Connected",
-		"tooltip-format-linked": "Connected",
-		"tooltip-format-wifi": "Connected"
-	},
-	"pulseaudio": {
-		"format": "{volume}% 墳  {format_source}",
-		"format-muted": "{volume}% 婢  {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "{volume}% "
 	}
 }
