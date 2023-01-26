@@ -11,9 +11,7 @@
 	"modules-right": [
 		"pulseaudio",
 		"network",
-		"backlight",
-		"battery",
-		"battery#bat2"
+		"battery"
 	],
 	"wlr/workspaces": {
 		"on-click": "activate",
@@ -26,49 +24,39 @@
 	},
 	"battery": {
 		"states": {
-			"warning": 30,
-			"critical": 15
+			"warning": 20,
+			"critical": 10
 		},
 		"format": "{capacity}% {icon}",
-		"format-charging": "{capacity}% ",
-		"format-plugged": "{capacity}% ",
+		"format-charging": "{capacity}% ",
+		"format-plugged": "{capacity}% ",
 		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
 		]
 	},
-	"battery#bat2": {
-		"bat": "BAT2"
-	},
 	"network": {
-		"format-wifi": "{essid} ({signalStrength}%) ",
-		"format-ethernet": "{ipaddr}/{cidr} ",
-		"tooltip-format": "{ifname} via {gwaddr} ",
-		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "Disconnected ⚠"
+		"format-disconnected": "{gwaddr} ",
+		"format-ethernet": "{gwaddr} ",
+		"format-linked": "{gwaddr} ",
+		"format-wifi": "{gwaddr} ",
+		"tooltip-format-disconnected": "Disconnected",
+		"tooltip-format-ethernet": "Connected",
+		"tooltip-format-linked": "Connected",
+		"tooltip-format-wifi": "Connected"
 	},
 	"pulseaudio": {
-		"format": "{volume}% {icon} {format_source}",
-		"format-bluetooth": "{volume}% {icon} {format_source}",
-		"format-bluetooth-muted": " {icon} {format_source}",
-		"format-muted": " {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "",
-		"format-icons": {
-			"headphone": "",
-			"hands-free": "",
-			"headset": "",
-			"phone": "",
-			"portable": "",
-			"car": "",
-			"default": [
-				"",
-				"",
-				""
-			]
-		}
+		"format": "{volume}% 墳  {format_source}",
+		"format-muted": "{volume}% 婢  {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "{volume}% "
 	}
 }

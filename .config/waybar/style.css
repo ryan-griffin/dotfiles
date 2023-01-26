@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-	background-color: #101419;
+	background: none;
 	color: #b6beca;
 }
 
@@ -13,8 +13,7 @@ window#waybar {
 #clock,
 #battery,
 #network,
-#pulseaudio,
-#wireplumber {
+#pulseaudio {
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;
@@ -36,12 +35,23 @@ window#waybar {
 	margin-left: 5px;
 }
 
+#pulseaudio.muted {
+	color: #e05f65;
+}
+
+#network.disconnected {
+	color: #e05f65;
+}
+
 #battery.charging,
 #battery.plugged {
-	color: #1c252c;
-	background-color: #78dba9;
+	color: #78dba9;
+}
+
+#battery.warning:not(.charging) {
+	color: #f1cf8a;
 }
 
 #battery.critical:not(.charging) {
-	background-color: #e05f65;
+	color: #e05f65;
 }
