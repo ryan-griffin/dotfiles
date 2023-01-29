@@ -1,5 +1,5 @@
 * {
-	font-family: Inter;
+	font-family: Inter, JetBrains Mono Nerd Font;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -7,6 +7,13 @@
 window#waybar {
 	background: none;
 	color: #b6beca;
+}
+
+tooltip {
+	background-color: #101419;
+	border: 1px solid #384148;
+	border-radius: 5px;
+	padding: 5px;
 }
 
 #workspaces button,

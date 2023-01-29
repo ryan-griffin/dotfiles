@@ -23,20 +23,25 @@
 		"tooltip-format": "{:%B %Y}\n<tt>{calendar}</tt>"
 	},
 	"network": {
-		"format-disconnected": "{gwaddr} ",
-		"format-ethernet": "{gwaddr} ",
-		"format-linked": "{gwaddr} ",
-		"format-wifi": "{gwaddr} ",
+		"format-disconnected": "... ",
+		"format-ethernet": "{gwaddr} ",
+		"format-linked": "{gwaddr} ",
+		"format-wifi": "{gwaddr} 直",
 		"tooltip-format-disconnected": "Disconnected",
 		"tooltip-format-ethernet": "Connected",
 		"tooltip-format-linked": "Connected",
 		"tooltip-format-wifi": "Connected"
 	},
 	"pulseaudio": {
-		"format": "{volume}% 墳  {format_source}",
-		"format-muted": "{volume}% 婢  {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "{volume}% "
+		"format": "{icon} {volume}%  {format_source}",
+		"format-muted": "{icon} {volume}%  {format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": " {volume}%",
+		"format-icons": [
+			"奄",
+			"奔",
+			"墳"
+		]
 	},
 	"battery": {
 		"states": {
