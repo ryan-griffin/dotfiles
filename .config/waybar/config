@@ -24,8 +24,8 @@
 	},
 	"network": {
 		"format-disconnected": "... ",
-		"format-ethernet": "{gwaddr} ",
-		"format-linked": "{gwaddr} ",
+		"format-ethernet": "{gwaddr} ",
+		"format-linked": "{gwaddr} ",
 		"format-wifi": "{gwaddr} 直",
 		"tooltip-format-disconnected": "Disconnected",
 		"tooltip-format-ethernet": "Connected",
