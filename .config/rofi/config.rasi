@@ -3,6 +3,7 @@
 configuration {
 	modi: "drun";
 	drun-display-format: "{name}";
+	show-icons: true;
 	font: "Inter bold 11";
 }
 
