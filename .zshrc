@@ -4,13 +4,14 @@ PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}❯ %{$reset_color%}"
 
 # aliases
 alias ls='exa --icons --git'
-bat='bat --style=numbers,changes --theme=base16'
+bat='bat --style=numbers,changes'
 alias cat="${bat} --paging=never"
 alias less="${bat} --paging=always"
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 # keybinds
 bindkey '^H' backward-kill-word # ctrl + backspace
-bindkey '^[[1;5C' forward-word # ctrl + right arrow 
+bindkey '^[[1;5C' forward-word # ctrl + right arrow
 bindkey '^[[1;5D' backward-word # ctrl + left arrow
 
 # history
