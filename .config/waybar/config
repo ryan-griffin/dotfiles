@@ -20,28 +20,26 @@
 	},
 	"clock": {
 		"format": "{:%I:%M %p %A, %B %d, %Y}",
-		"tooltip-format": "{:%B %Y}\n<tt>{calendar}</tt>"
+		"tooltip": false
 	},
 	"network": {
-		"format-disconnected": "... ",
-		"format-ethernet": "{gwaddr} ",
-		"format-linked": "{gwaddr} ",
-		"format-wifi": "{gwaddr} 直",
-		"tooltip-format-disconnected": "Disconnected",
-		"tooltip-format-ethernet": "Connected",
-		"tooltip-format-linked": "Connected",
-		"tooltip-format-wifi": "Connected"
+		"format-disconnected": "󰇨  ...",
+		"format-ethernet": "󰈁 {gwaddr}",
+		"format-linked": "󰈁 {gwaddr}",
+		"format-wifi": "󰖩 {gwaddr}",
+		"tooltip": false
 	},
 	"pulseaudio": {
 		"format": "{icon} {volume}%  {format_source}",
-		"format-muted": "{icon} {volume}%  {format_source}",
-		"format-source": " {volume}%",
-		"format-source-muted": " {volume}%",
+		"format-muted": "󰸈 {volume}%  {format_source}",
+		"format-source": "󰍬 {volume}%",
+		"format-source-muted": "󰍭 {volume}%",
 		"format-icons": [
-			"奄",
-			"奔",
-			"墳"
-		]
+			"󰕿",
+			"󰖀",
+			"󰕾"
+		],
+		"tooltip": false
 	},
 	"battery": {
 		"states": {
@@ -49,19 +47,20 @@
 			"critical": 10
 		},
 		"format": "{capacity}% {icon}",
-		"format-charging": "{capacity}% ",
-		"format-plugged": "{capacity}% ",
+		"format-charging": "{capacity}% 󰂄",
+		"format-plugged": "{capacity}% 󰂄",
 		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
-		]
+			"󰁺",
+			"󰁻",
+			"󰁼",
+			"󰁽",
+			"󰁾",
+			"󰁿",
+			"󰂀",
+			"󰂁",
+			"󰂂",
+			"󰁹"
+		],
+		"tooltip": false
 	}
 }

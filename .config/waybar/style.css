@@ -6,14 +6,6 @@
 
 window#waybar {
 	background: none;
-	color: #b6beca;
-}
-
-tooltip {
-	background-color: #101419;
-	border: 1px solid #384148;
-	border-radius: 5px;
-	padding: 5px;
 }
 
 #workspaces button,
@@ -42,23 +34,17 @@ tooltip {
 	margin-left: 5px;
 }
 
-#pulseaudio.muted {
+#pulseaudio.muted,
+#network.disconnected,
+#battery.critical:not(.charging) {
 	color: #e05f65;
-}
-
-#network.disconnected {
-	color: #e05f65;
-}
-
-#battery.charging,
-#battery.plugged {
-	color: #78dba9;
 }
 
 #battery.warning:not(.charging) {
 	color: #f1cf8a;
 }
 
-#battery.critical:not(.charging) {
-	color: #e05f65;
+#battery.charging,
+#battery.plugged {
+	color: #78dba9;
 }
