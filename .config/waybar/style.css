@@ -10,9 +10,10 @@ window#waybar {
 
 #workspaces button,
 #clock,
-#battery,
 #network,
-#pulseaudio {
+#pulseaudio,
+#backlight,
+#battery {
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;

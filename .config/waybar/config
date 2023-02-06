@@ -11,6 +11,7 @@
 	"modules-right": [
 		"network",
 		"pulseaudio",
+		"backlight",
 		"battery"
 	],
 	"wlr/workspaces": {
@@ -38,6 +39,16 @@
 			"󰕿",
 			"󰖀",
 			"󰕾"
+		],
+		"tooltip": false
+	},
+	"backlight": {
+		"format": "{icon}  {percent}%",
+		"format-icons": [
+			"󰃝",
+			"󰃞",
+			"󰃟",
+			"󰃠"
 		],
 		"tooltip": false
 	},
