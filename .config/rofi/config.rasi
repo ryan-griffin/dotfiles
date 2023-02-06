@@ -58,7 +58,7 @@ listview {
 }
 
 element {
-	background-color: @dark1;
+	background-color: inherit;
     padding: 10px;
 	spacing: 10px;
     border-radius: 5px;
