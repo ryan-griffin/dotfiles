@@ -8,7 +8,8 @@ configuration {
 }
 
 * {
-	light: #b6beca;
+	light1: #b6beca;
+	light2: #929aa6;
 	dark1: #101419;
 	dark2: #1c252c;
 	blue: #70a5eb;
@@ -38,16 +39,16 @@ textbox {
 	str: "";
 	font: "Inter 19";
 	width: 20px;
-	text-color: @light;
+	text-color: @light2;
 	background-color: inherit;
     expand: false;
 }
 
 entry {
     placeholder: "Search";
-	text-color: @light;
+	text-color: @light1;
     background-color: inherit;
-    placeholder-color: @light;
+    placeholder-color: @light2;
 	vertical-align: 0.5;
 }
 
@@ -64,7 +65,7 @@ element {
 }
 
 element-text {
-	text-color: @light;
+	text-color: @light1;
 }
 
 element selected {
