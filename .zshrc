@@ -3,9 +3,9 @@ autoload -U colors && colors
 PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}❯ %{$reset_color%}"
 
 # aliases
-alias ls='exa --icons --git'
+alias ls="exa --icons --git"
 alias cat="bat"
-alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 # keybinds
 bindkey '^H' backward-kill-word # ctrl + backspace
