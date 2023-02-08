@@ -4,9 +4,7 @@ PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}❯ %{$reset_color%}"
 
 # aliases
 alias ls='exa --icons --git'
-bat='bat --style=numbers,changes'
-alias cat="${bat} --paging=never"
-alias less="${bat} --paging=always"
+alias cat="bat"
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 # keybinds
