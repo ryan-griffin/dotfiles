@@ -45,6 +45,16 @@ format = '[󱇶 $account(@$domain)(\($region\))]($style) '
 [git_branch]
 format = '[󰘬 $branch(:$remote_branch)]($style) '
 
+[git_commit]
+style = 'bold purple'
+tag_symbol = "󰓼 "
+
+[git_state]
+style = 'bold purple'
+
+[git_status]
+style = 'bold purple'
+
 [golang]
 format = '[󰟓 ($version )]($style)'
 
