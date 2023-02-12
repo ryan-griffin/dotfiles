@@ -1,7 +1,3 @@
-# prompt
-autoload -U colors && colors
-PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}❯ %{$reset_color%}"
-
 # aliases
 alias ls="exa --icons --git"
 alias cat="bat"
@@ -22,3 +18,5 @@ setopt appendhistory
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(starship init zsh)"
