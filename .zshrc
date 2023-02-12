@@ -1,6 +1,7 @@
 # aliases
 alias ls="exa --icons --git"
 alias cat="bat"
+alias grep="rg"
 alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 # keybinds
