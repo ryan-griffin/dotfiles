@@ -1,9 +1,10 @@
 @theme "/dev/null"
 
 configuration {
-	modi: "drun";
+	modes: "drun";
 	drun-display-format: "{name}";
 	show-icons: true;
+	cycle: false;
 	font: "sans bold 11";
 }
 
@@ -53,8 +54,7 @@ entry {
 }
 
 listview {
-	background-color: @dark1;
-	cycle: false;
+	background-color: inherit;
 }
 
 element {
