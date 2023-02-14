@@ -20,6 +20,7 @@ packages=(
 	"grimblast-git"
 	"pipewire-pulse"
 	"playerctl"
+	"udiskie"
 	"kitty"
 	"firefox"
 	"webcord"
