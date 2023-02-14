@@ -3,7 +3,6 @@
 configuration {
 	modes: "drun";
 	drun-display-format: "{name}";
-	show-icons: true;
 	cycle: false;
 	font: "sans bold 11";
 }

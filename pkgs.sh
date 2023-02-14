@@ -16,6 +16,7 @@ packages=(
 	"waybar-hyprland"
 	"rofi-lbonn-wayland"
 	"mako"
+	"cliphist"
 	"grimblast-git"
 	"pipewire-pulse"
 	"playerctl"
