@@ -30,6 +30,4 @@ packages=(
 	"gnome-keyring"
 )
 
-for package in "${packages[@]}"; do
-	paru -S --noconfirm "$package"
-done
+exec paru -S --noconfirm "${packages[@]}"
