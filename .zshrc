@@ -2,7 +2,7 @@
 alias ls="exa --icons --git"
 alias cat="bat"
 alias grep="rg"
-alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
+alias code="code --ozone-platform=wayland"
 
 # keybinds
 bindkey '^H' backward-kill-word # ctrl + backspace
