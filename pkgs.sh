@@ -29,6 +29,7 @@ packages=(
 	"spicetify-cli"
 	"visual-studio-code-bin"
 	"gnome-keyring"
+	"nwg-look"
 )
 
 exec paru -S --noconfirm "${packages[@]}"
