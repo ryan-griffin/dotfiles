@@ -14,6 +14,7 @@ packages=(
 	"hyprpaper-git"
 	"hyprpicker-git"
 	"xdg-desktop-portal-hyprland-git"
+	"polkit-gnome"
 	"waybar-hyprland"
 	"rofi-lbonn-wayland"
 	"mako"
