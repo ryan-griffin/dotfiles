@@ -4,11 +4,6 @@ alias cat="bat"
 alias grep="rg"
 alias code="code --ozone-platform=wayland"
 
-# keybinds
-bindkey '^H' backward-kill-word # ctrl + backspace
-bindkey '^[[1;5C' forward-word  # ctrl + right arrow
-bindkey '^[[1;5D' backward-word # ctrl + left arrow
-
 # history
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=10000
