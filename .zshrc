@@ -2,7 +2,6 @@
 alias ls="exa --icons --git"
 alias cat="bat"
 alias grep="rg"
-alias code="code --ozone-platform=wayland"
 
 # history
 HISTFILE=~/.cache/zsh/history
