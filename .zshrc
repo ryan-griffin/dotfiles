@@ -1,6 +1,7 @@
 # aliases
 alias ls="exa --icons --git"
 alias cat="bat"
+alias less="bat --paging=always"
 alias grep="rg"
 
 # history

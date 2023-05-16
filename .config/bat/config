@@ -1,2 +1,3 @@
---style=numbers,changes
---theme=base16
+--plain
+--paging=never
+--theme=base16-256
