@@ -1,8 +1,8 @@
 # aliases
-alias ls="exa --icons --git"
+alias ls="exa --icons"
 alias cat="bat"
 alias less="bat --paging=always"
-alias grep="rg"
+alias grep="rg --no-line-number"
 
 # history
 HISTFILE=~/.cache/zsh/history
