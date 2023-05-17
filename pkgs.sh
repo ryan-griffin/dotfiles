@@ -3,6 +3,7 @@ packages=(
 	"zsh-autocomplete-git"
 	"zsh-autosuggestions"
 	"zsh-syntax-highlighting"
+	"zsh-completions"
 	"starship"
 	"exa"
 	"bat"
