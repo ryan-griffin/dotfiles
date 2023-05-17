@@ -1,6 +1,6 @@
 # aliases
 alias ls="exa --icons"
-alias cat="bat"
+alias cat="bat --paging=never"
 alias less="bat --paging=always"
 alias grep="rg --no-line-number"
 
