@@ -17,7 +17,7 @@ packages=(
 	"xdg-desktop-portal-hyprland"
 	"xdg-user-dirs"
 	"polkit-gnome"
-	"waybar-hyprland"
+	"waybar-hyprland-git"
 	"rofi-lbonn-wayland"
 	"mako"
 	"cliphist"
