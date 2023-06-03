@@ -1,6 +1,6 @@
 packages=(
 	"zsh"
-	"zsh-autocomplete-git"
+	"zsh-autocomplete"
 	"zsh-autosuggestions"
 	"zsh-syntax-highlighting"
 	"zsh-completions"
