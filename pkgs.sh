@@ -30,12 +30,12 @@ packages=(
 	"ly"
 	"kitty"
 	"firefox"
-	"webcord"
+	"webcord-bin"
 	"spotify"
 	"spicetify-cli"
 	"visual-studio-code-bin"
 	"gnome-keyring"
-	"nwg-look"
+	"nwg-look-bin"
 )
 
 exec paru -S "${packages[@]}"
