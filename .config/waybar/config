@@ -27,7 +27,7 @@
 		"format-disconnected": "󰇨  ...",
 		"format-ethernet": "󰈁 {gwaddr}",
 		"format-linked": "󰈁 {gwaddr}",
-		"format-wifi": "󰖩 {gwaddr}",
+		"format-wifi": "󰖩  {gwaddr}",
 		"tooltip": false
 	},
 	"pulseaudio": {
