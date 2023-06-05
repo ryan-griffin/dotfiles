@@ -60,6 +60,7 @@ linux /vmlinuz-linux
 initrd /$(ucode)-ucode.img
 initrd /initramfs-linux.img
 options root=$(root_partition_path) rw' > /boot/loader/entries/arch.conf
+systemctl enable systemd-boot-update.service
 ```
 
 #### Setup Locale
@@ -80,6 +81,12 @@ echo $(hostname) > /etc/hostname
 
 ```
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+```
+
+#### Set Hardware Clock
+
+```
+hwclock --systohc
 ```
 
 #### Enable Network Manager
