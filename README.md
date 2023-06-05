@@ -85,7 +85,7 @@ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 #### Enable Network Manager
 
 ```
-ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+systemctl enable NetworkManager
 ```
 
 #### Set Root Password
