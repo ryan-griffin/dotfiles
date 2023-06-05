@@ -20,7 +20,7 @@
 		"on-scroll-down": "hyprctl dispatch workspace e-1"
 	},
 	"clock": {
-		"format": "{:%I:%M %p %A, %B %d, %Y}",
+		"format": "{:%I:%M %p, %A, %B %d, %Y}",
 		"tooltip": false
 	},
 	"network": {
