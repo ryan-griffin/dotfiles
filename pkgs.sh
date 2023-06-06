@@ -27,6 +27,9 @@ packages=(
 	"playerctl"
 	"brightnessctl"
 	"udiskie"
+	"nwg-displays"
+	"wlr-randr"
+	"nwg-look-bin"
 	"ly"
 	"kitty"
 	"firefox"
@@ -35,7 +38,6 @@ packages=(
 	"spicetify-cli"
 	"visual-studio-code-bin"
 	"gnome-keyring"
-	"nwg-look-bin"
 )
 
 exec paru -S "${packages[@]}"
