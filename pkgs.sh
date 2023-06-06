@@ -1,4 +1,5 @@
 packages=(
+	"stow"
 	"zsh"
 	"zsh-autocomplete"
 	"zsh-autosuggestions"
