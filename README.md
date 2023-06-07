@@ -36,7 +36,7 @@ swapon /mnt/swapfile
 #### Install Important Packages
 
 ```
-pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager nano
+pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
 ```
 
 #### Generate Fstab
@@ -125,7 +125,7 @@ passwd $(username)
 #### Set Sudo Privileges
 
 ```
-EDITOR=nano visudo
+EDITOR=vim visudo
 ```
 
 - %wheel ALL=(ALL:ALL) ALL
