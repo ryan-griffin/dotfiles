@@ -25,7 +25,7 @@
 	"network": {
 		"format": "",
 		"format-disconnected": "󰇧  ...",
-		"format-ethernet": "󰈁 {essid}",
+		"format-ethernet": "󰈁 {ifname}",
 		"format-wifi": "󰖩  {essid}",
 		"tooltip": false
 	},
