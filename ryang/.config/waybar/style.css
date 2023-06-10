@@ -37,8 +37,7 @@ window#waybar {
 	margin-left: 5px;
 }
 
-#battery.charging,
-#battery.plugged {
+#battery.charging {
 	color: #78dba9;
 }
 
