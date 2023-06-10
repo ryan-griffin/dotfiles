@@ -10,24 +10,29 @@
 	],
 	"modules-right": [
 		"network",
+		"bluetooth",
 		"pulseaudio",
 		"backlight",
 		"battery"
 	],
 	"wlr/workspaces": {
-		"on-click": "activate",
-		"on-scroll-up": "hyprctl dispatch workspace e+1",
-		"on-scroll-down": "hyprctl dispatch workspace e-1"
+		"on-click": "activate"
 	},
 	"clock": {
 		"format": "{:%I:%M %p, %A, %B %d, %Y}",
 		"tooltip": false
 	},
 	"network": {
-		"format-disconnected": "󰇨  ...",
-		"format-ethernet": "󰈁 {gwaddr}",
-		"format-linked": "󰈁 {gwaddr}",
-		"format-wifi": "󰖩  {gwaddr}",
+		"format": "",
+		"format-disconnected": "󰇧  ...",
+		"format-ethernet": "󰈁 {essid}",
+		"format-wifi": "󰖩  {essid}",
+		"tooltip": false
+	},
+	"bluetooth": {
+		"format": "",
+		"format-on": "󰂯 ...",
+		"format-connected": "󰂱 {device_alias}",
 		"tooltip": false
 	},
 	"pulseaudio": {
@@ -45,9 +50,9 @@
 	"backlight": {
 		"format": "{icon}  {percent}%",
 		"format-icons": [
-			"󰃝",
 			"󰃞",
 			"󰃟",
+			"󰃝",
 			"󰃠"
 		],
 		"tooltip": false

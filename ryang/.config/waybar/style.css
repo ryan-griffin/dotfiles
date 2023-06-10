@@ -1,8 +1,3 @@
-* {
-	font-size: 14px;
-	font-weight: bold;
-}
-
 window#waybar {
 	background: none;
 }
@@ -10,9 +5,12 @@ window#waybar {
 #workspaces button,
 #clock,
 #network,
+#bluetooth,
 #pulseaudio,
 #backlight,
 #battery {
+	font-size: 14px;
+	font-weight: bold;
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;
@@ -39,17 +37,15 @@ window#waybar {
 	margin-left: 5px;
 }
 
-#pulseaudio.muted,
-#network.disconnected,
-#battery.critical:not(.charging) {
-	color: #e05f65;
+#battery.charging,
+#battery.plugged {
+	color: #78dba9;
 }
 
 #battery.warning:not(.charging) {
 	color: #f1cf8a;
 }
 
-#battery.charging,
-#battery.plugged {
-	color: #78dba9;
+#battery.critical:not(.charging) {
+	color: #e05f65;
 }
