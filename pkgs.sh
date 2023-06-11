@@ -21,6 +21,7 @@ packages=(
 	"waybar-hyprland-git"
 	"rofi-lbonn-wayland"
 	"mako"
+	"swayidle"
 	"gtklock"
 	"cliphist"
 	"grimblast"
