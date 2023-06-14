@@ -1,0 +1,41 @@
+scrollbar {
+	background-color: #101419;
+	border: none;
+}
+
+#window {
+	border: 2px solid #70a5eb;
+	border-radius: 10px;
+}
+
+#text,
+#input {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#outer-box {
+	margin: 15px;
+}
+
+#input {
+	background-color: #1c252c;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}
+
+#entry {
+	border-radius: 5px;
+	padding: 10px;
+}
+
+#entry:selected {
+	color: #101419;
+	background-color: #70a5eb;
+	outline: none;
+}
+
+#img {
+	margin-right: 10px;
+}
