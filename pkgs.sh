@@ -19,7 +19,7 @@ packages=(
 	"xdg-user-dirs"
 	"polkit-gnome"
 	"waybar-hyprland-git"
-	"rofi-lbonn-wayland"
+	"wofi"
 	"mako"
 	"swayidle"
 	"gtklock"
