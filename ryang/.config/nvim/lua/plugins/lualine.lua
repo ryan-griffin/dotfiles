@@ -3,8 +3,8 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		require("lualine").setup({
-			-- theme = "dark-decay",
 			options = {
+				theme = "decay",
 				disabled_filetypes = { "NvimTree" },
 			}
 		})
