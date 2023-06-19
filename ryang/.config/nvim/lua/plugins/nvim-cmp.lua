@@ -4,7 +4,6 @@ return {
 		"neovim/nvim-lspconfig",
 		"L3MON4D3/LuaSnip",
 		"rafamadriz/friendly-snippets",
-
 		"hrsh7th/cmp-nvim-lsp",
 		"saadparwaiz1/cmp_luasnip",
 		"hrsh7th/cmp-buffer",
@@ -56,12 +55,5 @@ return {
 				{ name = "cmdline" }
 			})
 		})
-
-		-- Set up lspconfig.
-		-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
-		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-		-- require("lspconfig")["rust_analyzer"].setup({
-		-- 	capabilities = capabilities
-		-- })
 	end,
 }
