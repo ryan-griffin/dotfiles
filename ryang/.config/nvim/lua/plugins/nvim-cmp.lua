@@ -10,6 +10,7 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
 		"onsails/lspkind.nvim",
+		"windwp/nvim-autopairs"
 	},
 	config = function()
 		-- Set up nvim-cmp.
@@ -72,5 +73,10 @@ return {
 				{ name = "cmdline" }
 			})
 		})
+
+		cmp.event:on(
+			"confirm_done",
+			require("nvim-autopairs.completion.cmp").on_confirm_done()
+		)
 	end,
 }
