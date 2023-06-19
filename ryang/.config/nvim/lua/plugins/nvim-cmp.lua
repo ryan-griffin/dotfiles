@@ -20,6 +20,7 @@ return {
 				-- REQUIRED - you must specify a snippet engine
 				expand = function(args)
 					require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+					require("luasnip.loaders.from_vscode").lazy_load() -- friendly-snippets
 				end,
 			},
 
@@ -59,8 +60,8 @@ return {
 		-- Set up lspconfig.
 		-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-		-- require("lspconfig")["rust_analyzer"].setup {
-		-- capabilities = capabilities
-		-- }
+		-- require("lspconfig")["rust_analyzer"].setup({
+		-- 	capabilities = capabilities
+		-- })
 	end,
 }
