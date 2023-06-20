@@ -5,7 +5,5 @@ return {
       "nvim-treesitter/nvim-treesitter"
     },
     event = "LspAttach",
-    config = function()
-        require("lspsaga").setup()
-    end
+	opts = {}
 }
