@@ -10,3 +10,4 @@ opt.backspace = "indent,eol,start"
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
 opt.laststatus = 3
+opt.showmode = false
