@@ -2,10 +2,14 @@ return {
 	"hrsh7th/nvim-cmp",
 	dependencies = {
 		"neovim/nvim-lspconfig",
-		"L3MON4D3/LuaSnip",
-		"rafamadriz/friendly-snippets",
+		{
+			"L3MON4D3/LuaSnip",
+			dependencies = {
+				"saadparwaiz1/cmp_luasnip",
+				"rafamadriz/friendly-snippets",
+			}
+		},
 		"hrsh7th/cmp-nvim-lsp",
-		"saadparwaiz1/cmp_luasnip",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
@@ -21,7 +25,6 @@ return {
 				-- REQUIRED - you must specify a snippet engine
 				expand = function(args)
 					require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
-					require("luasnip.loaders.from_vscode").lazy_load() -- friendly-snippets
 				end,
 			},
 
@@ -78,5 +81,7 @@ return {
 			"confirm_done",
 			require("nvim-autopairs.completion.cmp").on_confirm_done()
 		)
+
+		require("luasnip.loaders.from_vscode").lazy_load() -- friendly-snippets
 	end,
 }
