@@ -1,20 +1,31 @@
 return {
-	"hrsh7th/nvim-cmp",
+	"neovim/nvim-lspconfig",
 	dependencies = {
-		"neovim/nvim-lspconfig",
 		{
-			"L3MON4D3/LuaSnip",
+			"hrsh7th/nvim-cmp",
 			dependencies = {
-				"saadparwaiz1/cmp_luasnip",
-				"rafamadriz/friendly-snippets",
+				"hrsh7th/cmp-nvim-lsp",
+				"hrsh7th/cmp-buffer",
+				"hrsh7th/cmp-path",
+				"hrsh7th/cmp-cmdline",
+				"onsails/lspkind.nvim",
+				"windwp/nvim-autopairs",
+				{
+					"L3MON4D3/LuaSnip",
+					dependencies = {
+						"saadparwaiz1/cmp_luasnip",
+						"rafamadriz/friendly-snippets",
+					}
+				},
 			}
 		},
-		"hrsh7th/cmp-nvim-lsp",
-		"hrsh7th/cmp-buffer",
-		"hrsh7th/cmp-path",
-		"hrsh7th/cmp-cmdline",
-		"onsails/lspkind.nvim",
-		"windwp/nvim-autopairs"
+		{
+			"williamboman/mason.nvim",
+			dependencies = {
+				"williamboman/mason-lspconfig.nvim",
+			},
+			build = ":MasonUpdate"
+		}
 	},
 	config = function()
 		-- Set up nvim-cmp.
@@ -83,5 +94,17 @@ return {
 		)
 
 		require("luasnip.loaders.from_vscode").lazy_load() -- friendly-snippets
+
+		-- Set up mason
+		require("mason").setup()
+		require("mason-lspconfig").setup()
+		local capabilities = require('cmp_nvim_lsp').default_capabilities()
+		require("mason-lspconfig").setup_handlers({
+			function(server_name)
+				require("lspconfig")[server_name].setup({
+					capabilities = capabilities,
+				})
+			end,
+		})
 	end,
 }
