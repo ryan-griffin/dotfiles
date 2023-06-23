@@ -21,10 +21,18 @@ return {
 		},
 		{
 			"williamboman/mason.nvim",
+			build = ":MasonUpdate",
 			dependencies = {
 				"williamboman/mason-lspconfig.nvim",
-			},
-			build = ":MasonUpdate"
+				{
+					"jay-babu/mason-null-ls.nvim",
+					event = { "BufReadPre", "BufNewFile" },
+					dependencies = {
+						"jose-elias-alvarez/null-ls.nvim",
+						dependencies = "nvim-lua/plenary.nvim"
+					}
+				}
+			}
 		}
 	},
 	config = function()
@@ -47,7 +55,7 @@ return {
 						maxwidth = 50,
 					})(entry, vim_item)
 					local strings = vim.split(kind.kind, "%s", { trimempty = true })
-					kind.kind = (strings[1] or "") .. " "
+					kind.kind = (strings[1] or "")
 					kind.menu = "    (" .. (strings[2] or "") .. ")"
 
 					return kind
@@ -105,6 +113,10 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+		})
+
+		require("mason-null-ls").setup({
+			handlers = {}
 		})
 	end,
 }
