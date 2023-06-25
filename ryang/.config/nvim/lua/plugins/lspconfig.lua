@@ -9,14 +9,35 @@ return {
 				"hrsh7th/cmp-path",
 				"hrsh7th/cmp-cmdline",
 				"onsails/lspkind.nvim",
-				"windwp/nvim-autopairs",
+				{
+					"windwp/nvim-autopairs",
+					event = "InsertEnter",
+					opts = {}
+				},
 				{
 					"L3MON4D3/LuaSnip",
 					dependencies = {
 						"saadparwaiz1/cmp_luasnip",
-						"rafamadriz/friendly-snippets",
+						{
+							"rafamadriz/friendly-snippets",
+							config = function()
+								require("luasnip.loaders.from_vscode").lazy_load()
+							end
+						}
 					}
 				},
+				{
+					"zbirenbaum/copilot-cmp",
+					opts = {},
+					dependencies = {
+						"zbirenbaum/copilot.lua",
+						event = "InsertEnter",
+						opts = {
+							suggestion = { enabled = false },
+							panel = { enabled = false },
+						}
+					}
+				}
 			}
 		},
 		{
@@ -41,9 +62,8 @@ return {
 
 		cmp.setup({
 			snippet = {
-				-- REQUIRED - you must specify a snippet engine
 				expand = function(args)
-					require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+					require("luasnip").lsp_expand(args.body)
 				end,
 			},
 
@@ -53,6 +73,7 @@ return {
 					local kind = require("lspkind").cmp_format({
 						mode = "symbol_text",
 						maxwidth = 50,
+						symbol_map = { Copilot = "" }
 					})(entry, vim_item)
 					local strings = vim.split(kind.kind, "%s", { trimempty = true })
 					kind.kind = (strings[1] or "")
@@ -72,9 +93,10 @@ return {
 
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "luasnip" }, -- For luasnip users.
-			}, {
 				{ name = "buffer" },
+				{ name = "path" },
+				{ name = "luasnip" },
+				{ name = "copilot" },
 			})
 		})
 
@@ -90,9 +112,8 @@ return {
 		cmp.setup.cmdline(":", {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
+				{ name = "cmdline" },
 				{ name = "path" }
-			}, {
-				{ name = "cmdline" }
 			})
 		})
 
@@ -100,8 +121,6 @@ return {
 			"confirm_done",
 			require("nvim-autopairs.completion.cmp").on_confirm_done()
 		)
-
-		require("luasnip.loaders.from_vscode").lazy_load() -- friendly-snippets
 
 		-- Set up mason
 		require("mason").setup()

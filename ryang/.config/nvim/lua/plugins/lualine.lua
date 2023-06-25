@@ -6,7 +6,7 @@ return {
 			component_separators = "",
 			section_separators = "",
 			globalstatus = true,
-			disabled_filetypes = { "NvimTree" },
+			disabled_filetypes = { "NvimTree" }
 		},
 		sections = {
 			lualine_b = { "branch" },
@@ -14,4 +14,3 @@ return {
 		}
 	}
 }
-
