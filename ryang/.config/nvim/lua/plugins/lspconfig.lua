@@ -119,7 +119,7 @@ return {
 			handlers = {}
 		})
 
-		vim.api.nvim_create_autocmd("BufWritePre", {
+		vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
 			buffer = buffer,
 			callback = function()
 				vim.lsp.buf.format({ async = false })
