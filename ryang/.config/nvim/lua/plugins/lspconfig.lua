@@ -53,6 +53,9 @@ return {
 	config = function()
 		local cmp = require("cmp")
 
+		local colors = require("decay.core").get_colors("dark")
+		vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = colors.blue })
+
 		cmp.setup({
 			snippet = {
 				expand = function(args)
@@ -74,6 +77,10 @@ return {
 
 					return kind
 				end
+			},
+
+			window = {
+				documentation = cmp.config.window.bordered()
 			},
 
 			mapping = cmp.mapping.preset.insert({
