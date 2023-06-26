@@ -8,35 +8,15 @@ return {
 				"hrsh7th/cmp-buffer",
 				"hrsh7th/cmp-path",
 				"hrsh7th/cmp-cmdline",
+				"saadparwaiz1/cmp_luasnip",
 				"onsails/lspkind.nvim",
 				{
-					"windwp/nvim-autopairs",
-					event = "InsertEnter",
-					opts = {}
-				},
-				{
 					"L3MON4D3/LuaSnip",
-					dependencies = {
-						"saadparwaiz1/cmp_luasnip",
-						{
-							"rafamadriz/friendly-snippets",
-							config = function()
-								require("luasnip.loaders.from_vscode").lazy_load()
-							end
-						}
-					}
+					dependencies = "rafamadriz/friendly-snippets"
 				},
 				{
 					"zbirenbaum/copilot-cmp",
-					opts = {},
-					dependencies = {
-						"zbirenbaum/copilot.lua",
-						event = "InsertEnter",
-						opts = {
-							suggestion = { enabled = false },
-							panel = { enabled = false },
-						}
-					}
+					opts = {}
 				}
 			}
 		},
@@ -54,10 +34,23 @@ return {
 					}
 				}
 			}
+		},
+		{
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			opts = {}
+		},
+		{
+			"zbirenbaum/copilot.lua",
+			event = "InsertEnter",
+			opts = {
+				suggestion = { enabled = false },
+				panel = { enabled = false }
+			}
 		}
 	},
+
 	config = function()
-		-- Set up nvim-cmp.
 		local cmp = require("cmp")
 
 		cmp.setup({
@@ -88,7 +81,7 @@ return {
 				["<C-f>"] = cmp.mapping.scroll_docs(4),
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<C-e>"] = cmp.mapping.abort(),
-				["<Tab>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+				["<Tab>"] = cmp.mapping.confirm({ select = true }) -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 			}),
 
 			sources = cmp.config.sources({
@@ -96,7 +89,7 @@ return {
 				{ name = "buffer" },
 				{ name = "path" },
 				{ name = "luasnip" },
-				{ name = "copilot" },
+				{ name = "copilot" }
 			})
 		})
 
@@ -122,14 +115,15 @@ return {
 			require("nvim-autopairs.completion.cmp").on_confirm_done()
 		)
 
-		-- Set up mason
+		require("luasnip.loaders.from_vscode").lazy_load()
+
 		require("mason").setup()
 		require("mason-lspconfig").setup()
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		require("mason-lspconfig").setup_handlers({
 			function(server_name)
 				require("lspconfig")[server_name].setup({
-					capabilities = capabilities,
+					capabilities = capabilities
 				})
 			end,
 		})
@@ -144,5 +138,5 @@ return {
 				vim.lsp.buf.format({ async = false })
 			end
 		})
-	end,
+	end
 }
