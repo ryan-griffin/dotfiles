@@ -36,6 +36,7 @@ packages=(
 	"webcord-bin"
 	"spotify"
 	"spicetify-cli"
+	"neovim"
 	"visual-studio-code-bin"
 	"gnome-keyring"
 )
