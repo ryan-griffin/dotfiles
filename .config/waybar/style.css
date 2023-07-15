@@ -1,0 +1,47 @@
+* {
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+window#waybar {
+	background-color: #101419;
+	color: #b6beca;
+}
+
+#workspaces button,
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#wireplumber {
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #b6beca;
+	background-color: #1c252c;
+	margin: 5px 5px 0px 0px;
+}
+
+#workspaces button.active {
+	color: #101419;
+	background-color: #70a5eb;
+}
+
+#workspaces button.urgent {
+	background-color: #e05f65;
+}
+
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 5px;
+}
+
+#battery.charging,
+#battery.plugged {
+	color: #1c252c;
+	background-color: #78dba9;
+}
+
+#battery.critical:not(.charging) {
+	background-color: #e05f65;
+}

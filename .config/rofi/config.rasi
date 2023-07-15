@@ -1,0 +1,89 @@
+@theme "/dev/null"
+
+configuration {
+	modi: "drun";
+	drun-display-format: "{name}";
+	font: "Inter bold 11";
+}
+
+* {
+	light: #b6beca;
+	dark1: #101419;
+	dark2: #1c252c;
+	blue: #70a5eb;
+}
+
+window {
+	width: 549px;
+    height: 549px;
+	padding: 15px;
+	spacing: 15px;
+	children: [ inputbar, listview ];
+	background-color: @dark1;
+	border-radius: 10px;
+	border: 2px;
+	border-color: @blue;
+}
+
+inputbar {
+	children: [ textbox, entry ];
+    background-color: @dark2;
+    padding: 4px 10px;
+	spacing: 10px;
+    border-radius: 5px;
+}
+
+textbox {
+	str: "";
+	font: "Inter 19";
+	width: 20px;
+	text-color: @light;
+	background-color: inherit;
+    expand: false;
+}
+
+entry {
+    placeholder: "Search";
+	text-color: @light;
+    background-color: inherit;
+    placeholder-color: @light;
+	vertical-align: 0.5;
+}
+
+listview {
+	background-color: @dark1;
+	cycle: false;
+}
+
+element {
+	background-color: @dark1;
+    padding: 10px;
+	spacing: 10px;
+    border-radius: 5px;
+}
+
+element-text {
+	text-color: @light;
+}
+
+element selected {
+	text-color: @dark1;
+    background-color: @blue;
+}
+
+element-text selected {
+	text-color: @dark1;
+}
+
+element-icon {
+	size: 20px;
+}
+
+element-text {
+	vertical-align: 0.5;
+	highlight: none;
+}
+
+element-icon, element-text {
+	background-color: inherit;
+}

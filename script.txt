@@ -1,0 +1,43 @@
+create a bash script that installs arch Linux by doing the following:
+
+print the available devices using lsblk
+
+prompt the user for which device to use
+
+prompt the user for a hostname
+
+create a gpt label for device with parted using script flag
+
+create a 300MiB efi partition with parted
+
+create a root partition that uses the rest of the device with parted
+
+format efi partition with fat32
+
+format root partition with ext4
+
+mount the partitions to /mnt and /mnt/boot
+
+a swap file the size of half the amount of ram on the system should be created with dd, mkswap, swapon
+
+install essential packages base, linux, linux-firmware
+
+detect the CPU on the system to determine if intel or AMD ucode should be installed
+
+detect if an nvidia gpu is present to decide if the Nvidia driver should be installed
+
+create fstab
+
+set time zone to New_York
+
+set locale using sed command
+
+set hostname
+
+chroot
+
+install systemd boot and setup an entry using the appropriate initrd for the detected cpu
+
+install and enable networkmanager
+
+set root password
