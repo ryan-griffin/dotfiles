@@ -152,5 +152,6 @@ makepkg -si
 git clone https://github.com/ryan-griffin/dotfiles
 cd dotfiles
 ./pkgs.sh
+./gsettings.sh
 stow ryang --no-folding 
 ```
