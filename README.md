@@ -27,7 +27,7 @@ mount $(efi_partition_path) /mnt/boot
 #### Install Important Packages
 
 ```
-pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
+pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager $(editor)
 ```
 
 #### Create Swap File
@@ -125,7 +125,32 @@ passwd $(username)
 #### Set Sudo Privileges
 
 ```
-EDITOR=vim visudo
+EDITOR=$(editor) visudo
 ```
 
 - %wheel ALL=(ALL:ALL) ALL
+
+#### logout
+
+```
+logout
+```
+#### Install Git
+```
+sudo pacman -S git
+```
+
+#### Install Paru
+```
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
+#### Setup Dotfiles
+```
+git clone https://github.com/ryan-griffin/dotfiles
+cd dotfiles
+./pkgs.sh
+stow ryang --no-folding 
+```
