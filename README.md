@@ -24,6 +24,12 @@ mkdir /mnt/boot
 mount $(efi_partition_path) /mnt/boot
 ```
 
+#### Install Important Packages
+
+```
+pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
+```
+
 #### Create Swap File
 
 ```
@@ -31,12 +37,6 @@ dd if=/mnt/dev/zero of=/mnt/swapfile bs=1G count=8 status=progress
 chmod 0600 /mnt/swapfile
 mkswap -U clear /mnt/swapfile
 swapon /mnt/swapfile
-```
-
-#### Install Important Packages
-
-```
-pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
 ```
 
 #### Generate Fstab
