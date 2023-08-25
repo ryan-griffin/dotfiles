@@ -32,6 +32,8 @@ packages=(
 	"udiskie"
 	"ly"
 	"kitty"
+	"gradience"
+	"adw-gtk3"
 	"firefox"
 	"firefox-pwa-bin"
 	"webcord-bin"
