@@ -14,13 +14,12 @@ window#waybar {
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;
-	color: #b6beca;
 	background-color: #1c252c;
 	margin: 5px 5px 0px 0px;
+	outline: none;
 }
 
 #workspaces button.active {
-	color: #101419;
 	background-color: #70a5eb;
 }
 
@@ -29,7 +28,6 @@ window#waybar {
 }
 
 #workspaces button.urgent.active {
-	color: #101419;
 	background-color: #e05f65;
 }
 

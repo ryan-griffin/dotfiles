@@ -1,6 +1,7 @@
 width=541
 height=541
 prompt=Search
+sort_order=alphabetical
 allow_images=true
 image_size=24
 no_actions=true
