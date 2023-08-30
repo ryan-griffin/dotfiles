@@ -36,7 +36,7 @@ packages=(
 	"adw-gtk3"
 	"firefox"
 	"firefox-pwa-bin"
-	"webcord-bin"
+	"discord"
 	"neovim"
 	"visual-studio-code-bin"
 	"gnome-keyring"
