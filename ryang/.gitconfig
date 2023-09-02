@@ -1,3 +1,6 @@
 [user]
 	email = 85765087+ryan-griffin@users.noreply.github.com
 	name = ryan-griffin
+[credential]
+	helper = /sbin/git-credential-manager
+	credentialStore = secretservice

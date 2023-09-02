@@ -38,6 +38,7 @@ packages=(
 	"firefox-pwa-bin"
 	"discord"
 	"neovim"
+	"git-credential-manager-core-bin"
 	"visual-studio-code-bin"
 	"gnome-keyring"
 )
