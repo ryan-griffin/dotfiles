@@ -19,7 +19,7 @@ packages=(
 	"xdg-user-dirs"
 	"xdg-utils-handlr"
 	"polkit-gnome"
-	"waybar-hyprland-git"
+	"waybar"
 	"wofi"
 	"mako"
 	"swayidle"
