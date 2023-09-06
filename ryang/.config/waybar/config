@@ -3,7 +3,7 @@
 	"spacing": 0,
 	"height": 0,
 	"modules-left": [
-		"wlr/workspaces"
+		"hyprland/workspaces"
 	],
 	"modules-center": [
 		"clock"
@@ -15,7 +15,7 @@
 		"backlight",
 		"battery"
 	],
-	"wlr/workspaces": {
+	"hyprland/workspaces": {
 		"on-click": "activate"
 	},
 	"clock": {
