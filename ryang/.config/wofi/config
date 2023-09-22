@@ -5,4 +5,5 @@ allow_images=true
 image_size=24
 no_actions=true
 line_wrap=word_char
+insensitive=true
 gtk_dark=true
