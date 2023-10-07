@@ -1,7 +1,10 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
+	main = "ibl",
 	opts = {
-		use_treesitter = true,
-		show_current_context = true
+		scope = {
+			show_start = false,
+			show_end = false
+		},
 	}
 }

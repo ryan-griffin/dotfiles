@@ -1,5 +1,5 @@
 return {
-	"decaycs/decay.nvim",
+	"ryan-griffin/decay.nvim",
 	priority = 1000,
 	config = function()
 		require("decay").setup({
