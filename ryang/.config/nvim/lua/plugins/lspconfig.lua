@@ -71,6 +71,8 @@ return {
 					local strings = vim.split(kind.kind, "%s", { trimempty = true })
 					kind.kind = (strings[1] or "")
 					kind.menu = "    (" .. (strings[2] or "") .. ")"
+					vim.api.nvim_set_hl(0, "CmpItemKindCopilot",
+						{ fg = vim.api.nvim_get_hl_by_name("CmpItemKind", true).foreground })
 
 					return kind
 				end

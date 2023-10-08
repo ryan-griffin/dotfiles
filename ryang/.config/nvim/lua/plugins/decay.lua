@@ -12,8 +12,5 @@ return {
 				contrast = true,
 			}
 		})
-
-		local colors = require("decay.core").get_colors("dark")
-		vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = colors.blue })
 	end
 }
