@@ -34,7 +34,6 @@ packages=(
 	"gradience"
 	"adw-gtk3"
 	"firefox"
-	"firefox-pwa-bin"
 	"discord"
 	"neovim"
 	"git-credential-manager-core-bin"
