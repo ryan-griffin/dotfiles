@@ -25,6 +25,7 @@ packages=(
 	"gtklock"
 	"cliphist"
 	"grimblast"
+	"hyprpicker"
 	"pipewire-pulse"
 	"playerctl"
 	"brightnessctl"
