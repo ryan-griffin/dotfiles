@@ -25,14 +25,6 @@ return {
 			build = ":MasonUpdate",
 			dependencies = {
 				"williamboman/mason-lspconfig.nvim",
-				{
-					"jay-babu/mason-null-ls.nvim",
-					event = { "BufReadPre", "BufNewFile" },
-					dependencies = {
-						"jose-elias-alvarez/null-ls.nvim",
-						dependencies = "nvim-lua/plenary.nvim"
-					}
-				}
 			}
 		},
 		{
@@ -92,10 +84,10 @@ return {
 
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "buffer" },
-				{ name = "path" },
 				{ name = "luasnip" },
 				{ name = "copilot" }
+			}, {
+				{ name = "buffer" }
 			})
 		})
 
@@ -108,11 +100,12 @@ return {
 		})
 
 		-- Use cmdline & path source for ":" (if you enabled `native_menu`, this won"t work anymore).
-		cmp.setup.cmdline(":", {
+		cmp.setup.cmdline(':', {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
-				{ name = "cmdline" },
-				{ name = "path" }
+				{ name = 'path' }
+			}, {
+				{ name = 'cmdline' }
 			})
 		})
 
@@ -124,30 +117,29 @@ return {
 		require("luasnip.loaders.from_vscode").lazy_load()
 
 		require("mason").setup()
-		require("mason-lspconfig").setup()
+
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 		local augroup = vim.api.nvim_create_augroup("LspCapabilities", {})
-		require("mason-lspconfig").setup_handlers({
-			function(server_name)
-				require("lspconfig")[server_name].setup({
-					capabilities = capabilities,
-					on_attach = function(client, buffer)
-						if client.supports_method("textDocument/formatting") then
-							vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
-								group = augroup,
-								buffer = buffer,
-								callback = function()
-									vim.lsp.buf.format({ async = false })
-								end
-							})
-						end
-					end
-				})
-			end
-		})
 
-		require("mason-null-ls").setup({
-			handlers = {}
+		require("mason-lspconfig").setup({
+			handlers = {
+				function(server_name)
+					require("lspconfig")[server_name].setup({
+						capabilities = capabilities,
+						on_attach = function(client, buffer)
+							if client.supports_method("textDocument/formatting") then
+								vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePre" }, {
+									group = augroup,
+									buffer = buffer,
+									callback = function()
+										vim.lsp.buf.format({ async = false })
+									end
+								})
+							end
+						end
+					})
+				end
+			}
 		})
 	end
 }

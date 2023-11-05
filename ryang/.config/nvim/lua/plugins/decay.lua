@@ -6,7 +6,7 @@ return {
 			style = "dark",
 			italics = {
 				code = false,
-				comments = true
+				comments = false
 			},
 			nvim_tree = {
 				contrast = true,
