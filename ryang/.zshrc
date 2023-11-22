@@ -1,4 +1,4 @@
-alias ls="exa --icons"
+alias ls="eza --icons"
 alias cat="bat --paging=never"
 alias less="bat --paging=always"
 alias grep="rg --no-line-number"
