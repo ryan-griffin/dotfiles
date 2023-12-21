@@ -1,2 +1,0 @@
-enable_selector = true 
-selector = "wofi -dmenu -p 'Open With: '"
