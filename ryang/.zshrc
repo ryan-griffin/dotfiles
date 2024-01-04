@@ -8,8 +8,14 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(
+    zsh-autocomplete/zsh-autocomplete.plugin.zsh
+    zsh-autosuggestions/zsh-autosuggestions.zsh
+    fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+    zsh-autopair/autopair.zsh
+)
+for plugin in "${plugins[@]}"; do
+    source "/usr/share/zsh/plugins/$plugin"
+done
 
 eval "$(starship init zsh)"
