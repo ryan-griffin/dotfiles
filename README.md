@@ -135,23 +135,27 @@ EDITOR=$(editor) visudo
 ```
 logout
 ```
+
 #### Install Git
+
 ```
 sudo pacman -S git
 ```
 
 #### Install Paru
+
 ```
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin
 makepkg -si
 ```
 
 #### Setup Dotfiles
+
 ```
 git clone https://github.com/ryan-griffin/dotfiles
 cd dotfiles
 ./pkgs.sh
 ./gsettings.sh
-stow ryang --no-folding 
+stow ryang --no-folding
 ```
