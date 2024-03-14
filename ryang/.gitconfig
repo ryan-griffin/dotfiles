@@ -4,3 +4,5 @@
 [credential]
 	helper = /sbin/git-credential-manager
 	credentialStore = secretservice
+[init]
+	defaultBranch = main
