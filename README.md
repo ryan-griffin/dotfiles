@@ -33,9 +33,7 @@ pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager $(edi
 #### Create Swap File
 
 ```
-dd if=/mnt/dev/zero of=/mnt/swapfile bs=1G count=8 status=progress
-chmod 0600 /mnt/swapfile
-mkswap -U clear /mnt/swapfile
+mkswap -U clear --size 8G --file /swapfile
 swapon /mnt/swapfile
 ```
 
@@ -57,7 +55,7 @@ arch-chroot /mnt
 bootctl install
 echo 'title Arch Linux
 linux /vmlinuz-linux
-initrd /$(ucode)-ucode.img
+initrd /$(ucode).img
 initrd /initramfs-linux.img
 options root=$(root_partition_path) rw' > /boot/loader/entries/arch.conf
 systemctl enable systemd-boot-update.service
