@@ -1,7 +1,7 @@
 packages=(
 	"adw-gtk3"
 	"bat"
-	"celluloid"
+	"clapper"
 	"cups"
 	"decibels"
 	"discord"
@@ -29,6 +29,7 @@ packages=(
 	"gnome-text-editor"
 	"gnome-tweaks"
 	"gnome-weather"
+	"gst-libav"
 	"gst-plugin-pipewire"
 	"gvfs-google"
 	"gvfs-mtp"
