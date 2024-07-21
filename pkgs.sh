@@ -10,7 +10,6 @@ packages=(
 	"fwupd"
 	"gdm"
 	"geary"
-	"git-credential-manager-core-bin"
 	"gnome-backgrounds"
 	"gnome-calculator"
 	"gnome-calendar"
