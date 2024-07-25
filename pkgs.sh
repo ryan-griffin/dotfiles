@@ -40,6 +40,7 @@ packages=(
 	"resources"
 	"ripgrep"
 	"showtime"
+	"simple-scan"
 	"slack-desktop-wayland"
 	"starship"
 	"stow"
