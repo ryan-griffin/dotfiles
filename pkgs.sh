@@ -1,7 +1,6 @@
 packages=(
 	"adw-gtk3"
 	"bat"
-	"clapper"
 	"cups"
 	"decibels"
 	"discord"
@@ -40,6 +39,7 @@ packages=(
 	"papers"
 	"resources"
 	"ripgrep"
+	"showtime"
 	"slack-desktop-wayland"
 	"starship"
 	"stow"
