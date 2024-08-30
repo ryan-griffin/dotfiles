@@ -1,5 +1,5 @@
 packages=(
-	"adw-gtk3"
+	"adw-gtk-theme"
 	"bat"
 	"cups"
 	"decibels"
