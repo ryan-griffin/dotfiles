@@ -1,4 +1,11 @@
 /****************************************************************************
+ * Betterfox                                                                *
+ * "Ad meliora"                                                             *
+ * version: 129                                                             *
+ * url: https://github.com/yokoffing/Betterfox                              *
+ ****************************************************************************/
+
+/****************************************************************************
  * SECTION: FASTFOX                                                         *
  ****************************************************************************/
 
@@ -177,9 +184,10 @@ user_pref(
   false
 );
 user_pref("browser.preferences.moreFromMozilla", false);
-user_pref("browser.tabs.tabmanager.enabled", false);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.aboutwelcome.enabled", false);
+user_pref("browser.tabs.tabmanager.enabled", false);
+user_pref("browser.profiles.enabled", true);
 
 /** THEME ADJUSTMENTS ***/
 user_pref("browser.display.focus_ring_on_anything", true);
@@ -187,6 +195,10 @@ user_pref("browser.display.focus_ring_style", 0);
 user_pref("browser.display.focus_ring_width", 0);
 user_pref("layout.css.prefers-color-scheme.content-override", 2);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
+user_pref(
+  "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled",
+  true
+);
 
 /** COOKIE BANNER HANDLING ***/
 user_pref("cookiebanners.service.mode", 1);
@@ -213,7 +225,6 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("extensions.pocket.enabled", false);
 
 /** DOWNLOADS ***/
-user_pref("browser.download.always_ask_before_handling_new_types", true);
 user_pref("browser.download.manager.addToRecentDocs", false);
 
 /** PDF ***/
