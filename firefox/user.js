@@ -1,7 +1,7 @@
 /****************************************************************************
  * Betterfox                                                                *
  * "Ad meliora"                                                             *
- * version: 129                                                             *
+ * version: 130                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  ****************************************************************************/
 
@@ -195,10 +195,6 @@ user_pref("browser.display.focus_ring_style", 0);
 user_pref("browser.display.focus_ring_width", 0);
 user_pref("layout.css.prefers-color-scheme.content-override", 2);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
-user_pref(
-  "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled",
-  true
-);
 
 /** COOKIE BANNER HANDLING ***/
 user_pref("cookiebanners.service.mode", 1);
@@ -220,6 +216,7 @@ user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.showWeather", false);
 
 /** POCKET ***/
 user_pref("extensions.pocket.enabled", false);
@@ -241,7 +238,6 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
  * SECTION: SMOOTHFOX                                                       *
  ****************************************************************************/
 
-user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
 user_pref("mousewheel.default.delta_multiplier_x", 30);
 user_pref("mousewheel.default.delta_multiplier_y", 30);
