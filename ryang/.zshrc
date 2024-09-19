@@ -9,9 +9,9 @@ SAVEHIST=10000
 setopt appendhistory
 
 plugins=(
+    fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
     zsh-autocomplete/zsh-autocomplete.plugin.zsh
     zsh-autosuggestions/zsh-autosuggestions.zsh
-    fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
     zsh-autopair/autopair.zsh
 )
 for plugin in "${plugins[@]}"; do
