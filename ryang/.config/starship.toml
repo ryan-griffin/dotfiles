@@ -1,22 +1,15 @@
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$package\
+$cmd_duration\
+$line_break\
+$character"""
+
 add_newline = false
-
-[aws]
-format = '[󰸏 ($profile )(\($region\) )(\[$duration\] )]($style)'
-
-[azure]
-format = '[ ($subscription)]($style) '
-
-[c]
-format = '[ ($version(-$name) )]($style)'
-
-[cmd_duration]
-format = '[󰔛 $duration]($style) '
-
-[crystal]
-format = '[ ($version )]($style)'
-
-[dart]
-format = '[ ($version )]($style)'
 
 [directory]
 truncation_length = 6
@@ -24,26 +17,9 @@ truncation_symbol = '…/'
 read_only = '󰍁 '
 format = '[$read_only$path]($style) '
 
-[docker_context]
-format = '[󰡨 $context]($style) '
-
-[dotnet]
-format = '[󰪮 ($version )($tfm )]($style)'
-
-[elixir]
-format = '[ ($version \(OTP $otp_version\) )]($style)'
-
-[elm]
-format = '[ ($version )]($style)'
-
-[erlang]
-format = '[ ($version )]($style)'
-
-[gcloud]
-format = '[󱇶 $account(@$domain)(\($region\))]($style) '
-
 [git_branch]
-format = '[󰘬 $branch(:$remote_branch)]($style) '
+symbol = "󰘬 "
+format = '[$symbol$branch(:$remote_branch)]($style) '
 
 [git_commit]
 style = 'bold purple'
@@ -54,75 +30,11 @@ style = 'bold purple'
 
 [git_status]
 style = 'bold purple'
-
-[golang]
-format = '[󰟓 ($version )]($style)'
-
-[haskell]
-format = '[ ($version )]($style)'
-
-[haxe]
-format = "[ ($version )]($style)"
-
-[java]
-format = '[󰬷 (${version} )]($style)'
-
-[julia]
-format = '[ ($version )]($style)'
-
-[kotlin]
-format = '[ ($version )]($style)'
-
-[kubernetes]
-format = '[󱃾 $context( \($namespace\))]($style) in '
-
-[line_break]
-disabled = true
-
-[lua]
-format = '[ ($version )]($style)'
-
-[nim]
-format = '[ ($version )]($style)'
-
-[nodejs]
-format = '[󰎙 ($version )]($style)'
-
-[ocaml]
-format = '[ ($version )(\($switch_indicator$switch_name\) )]($style)'
+format = '[$all_status$ahead_behind]($style) '
 
 [package]
-format = '[󰏗 $version]($style) '
+symbol = "󰏗 "
+format = '[$symbol$version]($style) '
 
-[perl]
-format = '[ ($version )]($style)'
-
-[php]
-format = '[󰌟 ($version )]($style)'
-
-[purescript]
-format = '[ ($version )]($style)'
-
-[python]
-format = '[ ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-
-[rlang]
-format = '[ ($version )]($style)'
-
-[ruby]
-format = '[󰴭 ($version )]($style)'
-
-[rust]
-format = '[󱘗 ($version )]($style)'
-
-[scala]
-format = '[ (${version} )]($style)'
-
-[swift]
-format = '[ ($version )]($style)'
-
-[terraform]
-format = '[ $workspace]($style) '
-
-[zig]
-format = '[ ($version )]($style)'
+[cmd_duration]
+format = '[󰔛 $duration]($style) '
