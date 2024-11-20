@@ -9,13 +9,13 @@ SAVEHIST=10000
 setopt appendhistory
 
 plugins=(
-    fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-    zsh-autocomplete/zsh-autocomplete.plugin.zsh
-    zsh-autosuggestions/zsh-autosuggestions.zsh
-    zsh-autopair/autopair.zsh
+	fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+	zsh-autocomplete/zsh-autocomplete.plugin.zsh
+	zsh-autosuggestions/zsh-autosuggestions.zsh
+	zsh-autopair/autopair.zsh
 )
 for plugin in "${plugins[@]}"; do
-    source "/usr/share/zsh/plugins/$plugin"
+	source "/usr/share/zsh/plugins/$plugin"
 done
 
 eval "$(starship init zsh)"

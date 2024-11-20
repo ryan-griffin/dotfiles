@@ -6,8 +6,8 @@
 cfdisk $(disk_path)
 ```
 
-- efi (300 MiB)
-- root
+-   efi (300 MiB)
+-   root
 
 #### Format Partitions
 
@@ -126,7 +126,7 @@ passwd $(username)
 EDITOR=$(editor) visudo
 ```
 
-- %wheel ALL=(ALL:ALL) ALL
+-   %wheel ALL=(ALL:ALL) ALL
 
 #### logout
 
