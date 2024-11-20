@@ -27,7 +27,7 @@ mount $(efi_partition_path) /mnt/boot
 #### Install Important Packages
 
 ```
-pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager $(editor)
+pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
 ```
 
 #### Create Swap File
@@ -123,7 +123,7 @@ passwd $(username)
 #### Set Sudo Privileges
 
 ```
-EDITOR=$(editor) visudo
+VISUAL=vim visudo
 ```
 
 -   %wheel ALL=(ALL:ALL) ALL
