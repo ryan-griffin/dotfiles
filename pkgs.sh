@@ -10,6 +10,7 @@ packages=(
 	"fastfetch"
 	"firefox"
 	"fwupd"
+	"fzf"
 	"gdm"
 	"geary"
 	"gnome-backgrounds"
