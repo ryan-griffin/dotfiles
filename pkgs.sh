@@ -55,8 +55,6 @@ packages=(
 	"ttf-ms-win11-auto"
 	"valent"
 	"visual-studio-code-bin"
-	"xdg-desktop-portal-gnome"
-	"xdg-user-dirs-gtk"
 	"zed"
 	"zsh"
 	"zsh-autocomplete"
