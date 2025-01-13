@@ -34,14 +34,27 @@
 				"font_style": "italic"
 			},
 			"operator": {
-				"color": "#ff7ab2ff"
+				"color": "#63b7fffb"
 			}
 		}
 	},
 	"hard_tabs": true,
 	"tab_size": 4,
+	"soft_wrap": "editor_width",
 	"tabs": {
 		"file_icons": true
 	},
-	"soft_wrap": "editor_width"
+	"format_on_save": "on",
+	"languages": {
+		"C": {
+			"formatter": {
+				"external": {
+					"command": "clang-format",
+					"arguments": [
+						"--style={ BasedOnStyle: LLVM, UseTab: AlignWithSpaces, TabWidth: 4, IndentWidth: 4, AllowShortFunctionsOnASingleLine: Empty, IndentCaseLabels: true }"
+					]
+				}
+			}
+		}
+	}
 }
