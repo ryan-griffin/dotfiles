@@ -81,7 +81,7 @@ user_pref("privacy.history.custom", true);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
-user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.groupLabels.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("network.IDN_show_punycode", true);
@@ -99,7 +99,7 @@ user_pref("signon.autofillForms", false);
 user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("editor.truncate_user_pastes", false);
 
-/** ADDRESS + CREDIT CARD MANAGER */
+/** ADDRESSES + CREDIT CARDS */
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 
@@ -161,9 +161,6 @@ user_pref("network.connectivity-service.enabled", false);
  * SECTION: PESKYFOX                                                        *
  ****************************************************************************/
 
-/** WINDOW ***/
-user_pref("widget.gtk.rounded-bottom-corners.enabled", true); // LINUX
-
 /** MOZILLA UI ***/
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
@@ -185,6 +182,7 @@ user_pref("browser.profiles.enabled", true);
 
 /** THEME ADJUSTMENTS ***/
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
+user_pref("widget.gtk.rounded-bottom-corners.enabled", true); // LINUX
 
 /** COOKIE BANNER HANDLING ***/
 user_pref("cookiebanners.service.mode", 1);
