@@ -114,6 +114,7 @@ user_pref("extensions.enabledScopes", 5);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 /** CONTAINERS ***/
+user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 
 /** SAFE BROWSING ***/
@@ -219,6 +220,8 @@ user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("browser.menu.showViewImageInfo", true);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
+user_pref("browser.tabs.unloadTabInContextMenu", true);
+user_pref("browser.tabs.groups.enabled", true);
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
