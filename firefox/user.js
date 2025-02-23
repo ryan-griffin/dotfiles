@@ -228,9 +228,8 @@ user_pref("browser.tabs.groups.enabled", true);
  ****************************************************************************/
 
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
-user_pref("mousewheel.default.delta_multiplier_x", 30);
-user_pref("mousewheel.default.delta_multiplier_y", 30);
-user_pref("mousewheel.default.delta_multiplier_z", 30);
+user_pref("apz.gtk.pangesture.delta_mode", 2);
+user_pref("apz.gtk.pangesture.pixel_delta_mode_multiplier", 25);
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
