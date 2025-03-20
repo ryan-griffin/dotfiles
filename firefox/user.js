@@ -81,9 +81,6 @@ user_pref("browser.urlbar.groupLabels.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("network.IDN_show_punycode", true);
 
-/** HTTPS-FIRST POLICY ***/
-user_pref("dom.security.https_first", true);
-
 /** DNS OVER HTTPS */
 user_pref("network.trr.mode", 2);
 user_pref("network.trr.uri", "https://dns.adguard-dns.com/dns-query");
