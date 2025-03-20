@@ -12,10 +12,13 @@
 		"diagnostics": false,
 		"metrics": false
 	},
+	"features": {
+		"edit_prediction_provider": "zed"
+	},
 	"assistant": {
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "claude-3-5-sonnet"
+			"model": "claude-3-7-sonnet"
 		},
 		"version": "2"
 	},
@@ -44,6 +47,7 @@
 	"tabs": {
 		"file_icons": true
 	},
+	"restore_on_startup": "none",
 	"format_on_save": "on",
 	"languages": {
 		"C": {
