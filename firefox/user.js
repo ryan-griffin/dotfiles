@@ -115,6 +115,7 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 /** MOZILLA ***/
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.geo", 2);
+user_pref("geo.provider.network.url", "https://beacondb.net/v1/geolocate");
 user_pref("browser.search.update", false);
 user_pref("permissions.manager.defaultsUrl", "");
 
@@ -194,9 +195,11 @@ user_pref("browser.urlbar.trending.featureGate", false);
 /** NEW TAB PAGE ***/
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 3);
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
-user_pref("browser.newtabpage.activity-stream.showWeather", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showWeather", false);
 
 /** POCKET ***/
 user_pref("extensions.pocket.enabled", false);
