@@ -34,7 +34,6 @@ packages=(
 	"gst-plugin-pipewire"
 	"gvfs-google"
 	"gvfs-mtp"
-	"inter-font"
 	"key-rack"
 	"libreoffice-fresh"
 	"localsearch"
