@@ -147,13 +147,3 @@ git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
 makepkg -si
 ```
-
-#### Setup Dotfiles
-
-```
-git clone https://github.com/ryan-griffin/dotfiles
-cd dotfiles
-./pkgs.sh
-./gsettings.sh
-stow ryang --no-folding
-```
