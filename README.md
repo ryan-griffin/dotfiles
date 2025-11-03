@@ -3,7 +3,7 @@
 #### Create Partitions
 
 ```
-cfdisk $(disk_path)
+cfdisk $DISK_PATH
 ```
 
 -   efi (300 MiB)
@@ -12,22 +12,22 @@ cfdisk $(disk_path)
 #### Format Partitions
 
 ```
-mkfs.fat -F32 $(efi_parition_path)
-mkfs.ext4 $(root_parition_path)
+mkfs.fat -F32 $EFI_PARTITION_PATH
+mkfs.ext4 $ROOT_PARTITION_PATH
 ```
 
 #### Mount Partitions
 
 ```
-mount $(root_partition_path) /mnt
+mount $ROOT_PARTITION_PATH /mnt
 mkdir /mnt/boot
-mount $(efi_partition_path) /mnt/boot
+mount $EFI_PARTITION_PATH /mnt/boot
 ```
 
 #### Install Important Packages
 
 ```
-pacstrap /mnt linux linux-firmware $(ucode) base base-devel networkmanager vim
+pacstrap /mnt linux linux-firmware $UCODE base base-devel networkmanager vim
 ```
 
 #### Create Swap File
@@ -55,10 +55,9 @@ arch-chroot /mnt
 bootctl install
 echo 'title Arch Linux
 linux /vmlinuz-linux
-initrd /$(ucode).img
+initrd /$UCODE.img
 initrd /initramfs-linux.img
-options root=$(root_partition_path) rw' > /boot/loader/entries/arch.conf
-systemctl enable systemd-boot-update.service
+options root=$ROOT_PARTITION_PATH rw' > /boot/loader/entries/arch.conf
 ```
 
 #### Setup Locale
@@ -72,7 +71,7 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 #### Set Hostname
 
 ```
-echo $(hostname) > /etc/hostname
+echo $HOSTNAME > /etc/hostname
 ```
 
 #### Set Local Time
@@ -116,8 +115,8 @@ reboot
 #### Create user
 
 ```
-useradd -m $(username) -G wheel
-passwd $(username)
+useradd -m $USERNAME -G wheel
+passwd $USERNAME
 ```
 
 #### Set Sudo Privileges
