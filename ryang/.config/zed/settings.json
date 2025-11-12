@@ -7,6 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+	"collaboration_panel": {
+		"button": false
+	},
+	"project_panel": {
+		"hide_root": true
+	},
 	"vim_mode": false,
 	"telemetry": {
 		"diagnostics": false,
@@ -16,12 +22,36 @@
 		"edit_prediction_provider": "copilot"
 	},
 	"agent": {
-		"default_profile": "write",
+		"profiles": {
+			"ask": {
+				"name": "Ask",
+				"tools": {
+					"thinking": true,
+					"read_file": true,
+					"open": true,
+					"now": true,
+					"list_directory": true,
+					"grep": true,
+					"find_path": true,
+					"fetch": true,
+					"diagnostics": true
+				},
+				"context_servers": {
+					"mcp-server-context7": {
+						"tools": {
+							"resolve-library-id": true,
+							"get-library-docs": true
+						}
+					}
+				}
+			}
+		},
+		"always_allow_tool_actions": true,
+		"default_profile": "ask",
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "claude-sonnet-4"
-		},
-		"version": "2"
+			"model": "claude-sonnet-4.5"
+		}
 	},
 	"ui_font_size": 16,
 	"buffer_font_size": 14,
@@ -45,21 +75,6 @@
 	"hard_tabs": true,
 	"tab_size": 4,
 	"soft_wrap": "editor_width",
-	"tabs": {
-		"file_icons": true
-	},
 	"restore_on_startup": "none",
-	"format_on_save": "on",
-	"languages": {
-		"C": {
-			"formatter": {
-				"external": {
-					"command": "clang-format",
-					"arguments": [
-						"--style={ BasedOnStyle: LLVM, UseTab: AlignWithSpaces, TabWidth: 4, IndentWidth: 4, AllowShortFunctionsOnASingleLine: Empty, IndentCaseLabels: true }"
-					]
-				}
-			}
-		}
-	}
+	"formatter": "language_server"
 }
