@@ -9,4 +9,4 @@ packages=(
 	"zed"
 )
 
-exec paru -S "${packages[@]}"
+paru -S "${packages[@]}" --needed

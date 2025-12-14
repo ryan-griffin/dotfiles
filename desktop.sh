@@ -54,4 +54,4 @@ packages=(
 	"zsh-fast-syntax-highlighting"
 )
 
-exec paru -S "${packages[@]}"
+paru -S "${packages[@]}" --needed && "$(dirname "$0")/gsettings.sh"
