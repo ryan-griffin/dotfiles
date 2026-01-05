@@ -21,6 +21,7 @@ packages=(
 	"gnome-control-center"
 	"gnome-disk-utility"
 	"gnome-font-viewer"
+	"gnome-keyring"
 	"gnome-remote-desktop"
 	"gnome-software"
 	"gnome-text-editor"
