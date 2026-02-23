@@ -110,9 +110,6 @@ user_pref("editor.truncate_user_pastes", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 
-/** EXTENSIONS ***/
-user_pref("extensions.enabledScopes", 5);
-
 /** HEADERS / REFERERS ***/
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
@@ -225,7 +222,6 @@ user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("browser.menu.showViewImageInfo", true);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
-user_pref("browser.tabs.groups.enabled", true);
 
 /** XDG-DESKTOP-PORTAL ***/
 user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
