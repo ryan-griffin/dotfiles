@@ -35,15 +35,17 @@
 	"tab_size": 4,
 	"soft_wrap": "editor_width",
 	"formatter": "language_server",
-	"restore_on_startup": "none",
+	"session": {
+		"trust_all_worktrees": true
+	},
 	"project_panel": {
 		"hide_root": true
 	},
 	"collaboration_panel": {
 		"button": false
 	},
-	"features": {
-		"edit_prediction_provider": "copilot"
+	"edit_predictions": {
+		"provider": "copilot"
 	},
 	"agent": {
 		"profiles": {
@@ -64,13 +66,12 @@
 					"mcp-server-context7": {
 						"tools": {
 							"resolve-library-id": true,
-							"get-library-docs": true
+							"query-docs": true
 						}
 					}
 				}
 			}
 		},
-		"always_allow_tool_actions": true,
 		"default_profile": "ask",
 		"default_model": {
 			"provider": "copilot_chat",
@@ -80,5 +81,19 @@
 			"provider": "copilot_chat",
 			"model": "gemini-3-flash-preview"
 		},
+	},
+	"agent_servers": {
+		"opencode": {
+			"type": "registry"
+		}
+	},
+	"lsp": {
+		"rust-analyzer": {
+			"initialization_options": {
+				"check": {
+					"command": "clippy"
+				}
+			}
+		}
 	}
 }
