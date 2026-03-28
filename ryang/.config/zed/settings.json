@@ -10,7 +10,7 @@
 	"vim_mode": false,
 	"telemetry": {
 		"diagnostics": false,
-		"metrics": false
+		"metrics": false,
 	},
 	"ui_font_family": "Adwaita Sans",
 	"buffer_font_family": "JetBrainsMono Nerd Font",
@@ -18,34 +18,33 @@
 	"theme": {
 		"mode": "system",
 		"light": "Xcode Default Light",
-		"dark": "Xcode Default Darker"
+		"dark": "Xcode Default Darker",
 	},
 	"experimental.theme_overrides": {
 		"syntax": {
 			"comment": {
-				"font_style": "italic"
+				"font_style": "italic",
 			},
 			"operator": {
-				"color": "#63b7fffb"
-			}
-		}
+				"color": "#63b7fffb",
+			},
+		},
 	},
 	"colorize_brackets": true,
 	"hard_tabs": true,
 	"tab_size": 4,
 	"soft_wrap": "editor_width",
-	"formatter": "language_server",
 	"session": {
-		"trust_all_worktrees": true
+		"trust_all_worktrees": true,
 	},
 	"project_panel": {
-		"hide_root": true
+		"hide_root": true,
 	},
 	"collaboration_panel": {
-		"button": false
+		"button": false,
 	},
 	"edit_predictions": {
-		"provider": "copilot"
+		"provider": "copilot",
 	},
 	"agent": {
 		"profiles": {
@@ -60,40 +59,42 @@
 					"grep": true,
 					"find_path": true,
 					"fetch": true,
-					"diagnostics": true
+					"diagnostics": true,
 				},
 				"context_servers": {
 					"mcp-server-context7": {
 						"tools": {
 							"resolve-library-id": true,
-							"query-docs": true
-						}
-					}
-				}
-			}
+							"query-docs": true,
+						},
+					},
+				},
+			},
 		},
 		"default_profile": "ask",
 		"default_model": {
+			"effort": "high",
+			"enable_thinking": true,
 			"provider": "copilot_chat",
-			"model": "claude-opus-4.5"
+			"model": "gemini-3.1-pro-preview",
 		},
 		"inline_assistant_model": {
 			"provider": "copilot_chat",
-			"model": "gemini-3-flash-preview"
+			"model": "gemini-3.1-pro-preview",
 		},
 	},
 	"agent_servers": {
 		"opencode": {
-			"type": "registry"
-		}
+			"type": "registry",
+		},
 	},
 	"lsp": {
 		"rust-analyzer": {
 			"initialization_options": {
 				"check": {
-					"command": "clippy"
-				}
-			}
-		}
-	}
+					"command": "clippy",
+				},
+			},
+		},
+	},
 }
