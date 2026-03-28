@@ -1,7 +1,7 @@
 /****************************************************************************
  * BetterZen                                                                *
  * "Ex nihilo nihil fit"                                                    *
- * version: 148                                                             *
+ * version: 149                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  ****************************************************************************/
 
@@ -119,9 +119,6 @@ user_pref("findbar.highlightAll", true);
 user_pref("zen.view.compact.toolbar-flash-popup", true);
 user_pref("zen.tabs.ctrl-tab.ignore-pending-tabs", true);
 user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
-
-/** XDG-DESKTOP-PORTAL ***/
-user_pref("widget.use-xdg-desktop-portal.file-picker", 1); // LINUX
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
