@@ -28,7 +28,6 @@ packages=(
 	"gnome-weather"
 	"gst-libav"
 	"gst-plugin-pipewire"
-	"gvfs-google"
 	"gvfs-mtp"
 	"key-rack"
 	"localsearch"
