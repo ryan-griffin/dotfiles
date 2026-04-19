@@ -6,8 +6,8 @@
 cfdisk $DISK_PATH
 ```
 
--   efi (300 MiB)
--   root
+- efi (512 MiB)
+- root
 
 #### Format Partitions
 
@@ -33,7 +33,7 @@ pacstrap /mnt linux linux-firmware $UCODE base base-devel networkmanager vim
 #### Create Swap File
 
 ```
-mkswap -U clear --size 8G --file /swapfile
+mkswap -U clear --size 8G --file /mnt/swapfile
 swapon /mnt/swapfile
 ```
 
@@ -80,10 +80,11 @@ echo $HOSTNAME > /etc/hostname
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
 
-#### Set Hardware Clock
+#### Set Clock
 
 ```
 hwclock --systohc
+timedatectl set-ntp true
 ```
 
 #### Enable Network Manager
@@ -125,7 +126,7 @@ passwd $USERNAME
 VISUAL=vim visudo
 ```
 
--   %wheel ALL=(ALL:ALL) ALL
+- %wheel ALL=(ALL:ALL) ALL
 
 #### logout
 
