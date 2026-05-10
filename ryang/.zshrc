@@ -8,6 +8,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+eval "$(dircolors -b)"
+
 plugins=(
 	fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 	zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -17,5 +19,7 @@ plugins=(
 for plugin in "${plugins[@]}"; do
 	source "/usr/share/zsh/plugins/$plugin"
 done
+
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 eval "$(starship init zsh)"
