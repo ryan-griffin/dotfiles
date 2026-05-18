@@ -6,7 +6,13 @@ alias grep="rg --no-line-number"
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory
+
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_FCNTL_LOCK
 
 eval "$(dircolors -b)"
 
