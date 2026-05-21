@@ -1,15 +1,14 @@
 /****************************************************************************
  * BetterZen                                                                *
  * "Ex nihilo nihil fit"                                                    *
- * version: 149                                                             *
+ * version: 150                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  ****************************************************************************/
 
 /****************************************************************************
  * SECTION: SECUREFOX                                                       *
  ****************************************************************************/
-
-// /** TRACKING PROTECTION ***/
+/** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "strict");
 user_pref("browser.download.start_downloads_in_tmp_dir", true);
 user_pref("browser.uitour.enabled", false);
@@ -31,7 +30,7 @@ user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
 user_pref("media.memory_cache_max_size", 65536);
 user_pref("browser.sessionstore.interval", 60000);
 
-// /** SHUTDOWN & SANITIZING ***/
+/** SHUTDOWN & SANITIZING ***/
 user_pref("privacy.history.custom", true);
 
 /** SPECULATIVE LOADING ***/
@@ -89,7 +88,6 @@ user_pref("breakpad.reportURL", "");
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
  ****************************************************************************/
-
 /** MOZILLA UI ***/
 user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("browser.aboutConfig.showWarning", false);
@@ -106,6 +104,7 @@ user_pref("browser.newtabpage.activity-stream.default.sites", "");
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
+user_pref("browser.newtab.preload", false);
 
 /** PDF ***/
 user_pref("browser.download.open_pdf_attachments_inline", true);
@@ -116,7 +115,7 @@ user_pref("browser.menu.showViewImageInfo", true);
 user_pref("browser.tabs.fadeOutUnloadedTabs", true);
 user_pref("browser.startup.page", 1);
 user_pref("findbar.highlightAll", true);
-user_pref("zen.view.compact.toolbar-flash-popup", true);
+user_pref("browser.ctrlTab.sortByRecentlyUsed", true);
 user_pref("zen.tabs.ctrl-tab.ignore-pending-tabs", true);
 user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
 
