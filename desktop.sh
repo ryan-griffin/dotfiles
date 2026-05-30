@@ -13,6 +13,7 @@ packages=(
 	"fzf"
 	"gdm"
 	"ghostty"
+	"ghostty-nautilus"
 	"gnome-backgrounds"
 	"gnome-calculator"
 	"gnome-calendar"
