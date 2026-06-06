@@ -95,6 +95,9 @@ user_pref("browser.aboutConfig.showWarning", false);
 /** THEME ADJUSTMENTS ***/
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
 
+/** FULLSCREEN NOTICE ***/
+user_pref("full-screen-api.warning.timeout", 0);
+
 /** URL BAR ***/
 user_pref("browser.search.suggest.enabled", true);
 user_pref("zen.urlbar.behavior", "float");
