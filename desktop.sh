@@ -29,6 +29,7 @@ packages=(
 	"gnome-weather"
 	"gst-libav"
 	"gst-plugin-pipewire"
+	"gst-thumbnailers"
 	"gvfs-mtp"
 	"key-rack"
 	"loupe"
