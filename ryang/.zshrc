@@ -1,3 +1,7 @@
+export VISUAL=vim
+export PAGER="bat --paging=always"
+export FZF_DEFAULT_OPTS="--color=16"
+
 alias ls="eza --icons=auto --group-directories-first"
 alias cat="bat --paging=never"
 alias less="bat --paging=always"
