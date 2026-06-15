@@ -6,6 +6,8 @@ alias ls="eza --icons=auto --group-directories-first"
 alias cat="bat --paging=never"
 alias less="bat --paging=always"
 alias grep="rg --no-line-number"
+alias df="duf -theme ansi"
+alias du="dust"
 
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=10000
