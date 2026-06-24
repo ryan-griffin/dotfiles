@@ -32,6 +32,7 @@ packages=(
 	"gnome-weather"
 	"gst-libav"
 	"gst-plugin-pipewire"
+	"gst-plugins-bad"
 	"gst-thumbnailers"
 	"gvfs-mtp"
 	"key-rack"
@@ -42,6 +43,8 @@ packages=(
 	"noto-fonts"
 	"noto-fonts-cjk"
 	"papers"
+	"pipewire-alsa"
+	"pipewire-jack"
 	"resources"
 	"ripgrep"
 	"showtime"
@@ -58,4 +61,4 @@ packages=(
 	"zsh-fast-syntax-highlighting"
 )
 
-paru -S "${packages[@]}" --needed && "$(dirname "$0")/gsettings.sh"
+paru -S "${packages[@]}" --needed
