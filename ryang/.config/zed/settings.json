@@ -66,14 +66,6 @@
 					"fetch": true,
 					"diagnostics": true,
 				},
-				"context_servers": {
-					"mcp-server-context7": {
-						"tools": {
-							"resolve-library-id": true,
-							"query-docs": true,
-						},
-					},
-				},
 			},
 		},
 		"default_profile": "ask",
