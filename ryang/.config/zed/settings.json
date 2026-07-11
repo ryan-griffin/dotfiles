@@ -38,7 +38,17 @@
 	"tab_size": 4,
 	"soft_wrap": "editor_width",
 	"restore_on_startup": "launchpad",
-	"cli_default_open_behavior": "new_window",
+	"completion_menu_item_kind": "symbol",
+	"tabs": {
+		"file_icons": true,
+	},
+	"status_bar": {
+		"active_encoding_button": "enabled",
+		"line_endings_button": true,
+	},
+	"terminal": {
+		"cursor_shape": "bar",
+	},
 	"session": {
 		"trust_all_worktrees": true,
 	},
@@ -52,6 +62,8 @@
 		"provider": "copilot",
 	},
 	"agent": {
+		"show_turn_stats": true,
+		"enable_feedback": false,
 		"profiles": {
 			"ask": {
 				"name": "Ask",
@@ -70,14 +82,8 @@
 		},
 		"default_profile": "ask",
 		"default_model": {
-			"effort": "high",
-			"enable_thinking": true,
-			"provider": "copilot_chat",
-			"model": "gemini-3.1-pro-preview",
-		},
-		"inline_assistant_model": {
-			"provider": "copilot_chat",
-			"model": "gemini-3.1-pro-preview",
+			"provider": "openrouter",
+			"model": "nvidia/nemotron-3-ultra-550b-a55b:free",
 		},
 	},
 	"agent_servers": {
