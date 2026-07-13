@@ -48,7 +48,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```bash
 ln -sf ../run/systemd/resolve/stub-resolv.conf /mnt/etc/resolv.conf
 mkdir -p /mnt/etc/systemd/resolved.conf.d
-echo -e "[Resolve]\nDNSOverTLS=opportunistic\n" > /mnt/etc/systemd/resolved.conf.d/99-dns-over-tls.conf
+echo -e "[Resolve]\nDNSOverTLS=opportunistic" > /mnt/etc/systemd/resolved.conf.d/99-dns-over-tls.conf
 ```
 
 #### Change Root
