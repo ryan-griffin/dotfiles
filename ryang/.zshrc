@@ -35,6 +35,6 @@ done
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 builtin zstyle ':completion:*:*:*:*' completer \
-    _expand _complete _prefix _correct _ignored
+	_expand _complete _prefix _correct _ignored
 
 eval "$(starship init zsh)"
