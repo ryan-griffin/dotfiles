@@ -18,18 +18,29 @@
 	"ui_font_family": "Adwaita Sans",
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"buffer_font_size": 14,
-	"theme": {
-		"mode": "system",
-		"light": "Xcode Default Light",
-		"dark": "Xcode Default Darker",
-	},
-	"experimental.theme_overrides": {
-		"syntax": {
-			"comment": {
-				"font_style": "italic",
-			},
-			"operator": {
-				"color": "#63b7fffb",
+	"theme": "Xcode Default Darker",
+	"theme_overrides": {
+		"Xcode Default Darker": {
+			"accents": [
+				"#63b7fffb",
+				"#ff8170ff",
+				"#ff7ab2ff",
+				"#78c2b3ff",
+				"#b281ebff",
+				"#d9c97cff",
+			],
+			"syntax": {
+				"comment": {
+					"font_style": "italic",
+				},
+				"operator": {
+					"color": "#4eb0ccff",
+				},
+				"boolean": { "font_weight": 500 },
+				"emphasis.strong": { "font_weight": 500 },
+				"tag": { "font_weight": 500 },
+				"title": { "font_weight": 500 },
+				"variable.special": { "font_weight": 500 },
 			},
 		},
 	},
