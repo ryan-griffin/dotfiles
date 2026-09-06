@@ -153,6 +153,9 @@ user_pref("browser.ctrlTab.sortByRecentlyUsed", true);
 user_pref("zen.tabs.ctrl-tab.ignore-pending-tabs", true);
 user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
 
+/** SYNC ***/
+user_pref("services.sync.engine.spaces", true);
+
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
  ****************************************************************************/
