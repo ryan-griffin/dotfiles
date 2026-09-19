@@ -1,7 +1,7 @@
 /****************************************************************************
  * BetterZen                                                                *
  * "Ex nihilo nihil fit"                                                    *
- * version: 152                                                             *
+ * version: 154                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  ****************************************************************************/
 
@@ -14,9 +14,6 @@ user_pref("content.notify.interval", 100000);
 
 /** GFX ***/
 user_pref("gfx.canvas.accelerated.cache-size", 512);
-
-/** JS ***/
-user_pref("javascript.options.baselinejit.threshold", 50);
 
 /** MEDIA CACHE ***/
 user_pref("media.cache_readahead_limit", 3600);
@@ -147,7 +144,6 @@ user_pref("browser.download.open_pdf_attachments_inline", true);
 /** TAB BEHAVIOR ***/
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("browser.tabs.fadeOutUnloadedTabs", true);
-user_pref("browser.startup.page", 1);
 user_pref("findbar.highlightAll", true);
 user_pref("browser.ctrlTab.sortByRecentlyUsed", true);
 user_pref("zen.tabs.ctrl-tab.ignore-pending-tabs", true);
@@ -155,6 +151,7 @@ user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
 
 /** SYNC ***/
 user_pref("services.sync.engine.spaces", true);
+user_pref("zen.spaces-sync.normal-tabs", true);
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
